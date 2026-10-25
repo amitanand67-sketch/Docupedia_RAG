@@ -1,0 +1,20 @@
+{"question": "How many days of earned leave do employees get per year?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["18"]}
+{"question": "How much unused earned leave can be carried over?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["10"]}
+{"question": "What are the company holidays in December 2027?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["24", "25", "31"]}
+{"question": "When is Founders' Day?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["16"]}
+{"question": "Who reviews a leave request longer than 5 days?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["HR Business Partner"]}
+{"question": "How quickly must a line manager review a leave request?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["2 working days"]}
+{"question": "When do I need a medical certificate for sick leave?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["48 hours"]}
+{"question": "Who is the CFO?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["Lucas Fernandes"]}
+{"question": "What are the core collaboration hours?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["10:30", "16:30"]}
+{"question": "What is the home office allowance?", "source": "Lumora_Employee_Handbook_2027.pdf", "expect": ["25,000"]}
+{"question": "Which API gateway does OrbitDesk use and what is its rate limit?", "source": "Lumora_Platform_Architecture.docx", "expect": ["Kong", "600"], "user": "Ravi (engineer)"}
+{"question": "Which language is the billing service written in?", "source": "Lumora_Platform_Architecture.docx", "expect": ["Go"], "user": "Ravi (engineer)"}
+{"question": "What is the response time for a SEV1 incident?", "source": "Lumora_Platform_Architecture.docx", "expect": ["15 min"], "user": "Ravi (engineer)"}
+{"question": "Which Slack channel is on-call for the billing service?", "source": "Lumora_Platform_Architecture.docx", "expect": ["#oncall-ledger"], "user": "Ravi (engineer)"}
+{"question": "How long are database backups kept?", "source": "Lumora_Platform_Architecture.docx", "expect": ["35 days"], "user": "Ravi (engineer)"}
+{"question": "How do I connect to the VPN?", "source": "lumora_it_helpdesk_faq.html", "expect": ["GlobalProtect"]}
+{"question": "How long does an account stay locked after failed sign-ins?", "source": "lumora_it_helpdesk_faq.html", "expect": ["15 minutes"]}
+{"question": "How much RAM do engineers' laptops have?", "source": "lumora_it_helpdesk_faq.html", "expect": ["32 GB"]}
+{"question": "What is the CEO's favourite food?", "source": null, "expect": ["couldn't find", "could not find", "not find", "don't have", "no information", "not mentioned"]}
+{"question": "Which API gateway does OrbitDesk use?", "source": null, "expect": ["couldn't find", "could not find", "not find", "don't have", "no information", "not mentioned", "access"], "user": "Asha (employee)", "note": "employees cannot see the architecture doc"}

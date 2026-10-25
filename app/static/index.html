@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DocupediaAI</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">D</span>
+      <div>
+        <strong>DocupediaAI</strong>
+        <small>Answers from your company documents, with sources</small>
+      </div>
+    </div>
+    <nav class="tabs">
+      <button class="tab active" data-view="chat">Chat</button>
+      <button class="tab hidden" data-view="analytics" id="analytics-tab">Analytics</button>
+    </nav>
+    <div class="who">
+      <label for="user-select" id="user-label">Signed in as</label>
+      <select id="user-select" class="hidden"></select>
+      <span id="user-name"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="chat-view" class="view">
+      <div id="messages" class="messages">
+        <div class="empty" id="empty">
+          <h1>Ask anything about Lumora's documents</h1>
+          <p>Answers come only from the indexed handbook, architecture doc and IT FAQ, including their images.</p>
+          <div class="suggestions">
+            <button>What are the company holidays in December 2027?</button>
+            <button>Who approves a 7-day leave request, and how long does it take?</button>
+            <button>What databases does the OrbitDesk platform use?</button>
+            <button>How do I reset my password?</button>
+          </div>
+        </div>
+      </div>
+      <form id="composer" class="composer">
+        <button type="button" id="new-chat" class="ghost" title="Start a new conversation">New chat</button>
+        <textarea id="question" rows="1" placeholder="Ask a question..." maxlength="2000" required></textarea>
+        <button type="submit" id="send">Send</button>
+      </form>
+    </section>
+
+    <section id="analytics-view" class="view hidden">
+      <h1>Usage analytics</h1>
+      <p class="muted">Last 500 answers. Refreshes when you open this tab.</p>
+      <div class="tiles" id="tiles"></div>
+      <div class="panels">
+        <div class="panel">
+          <h2>Most cited documents</h2>
+          <ol id="top-sources"></ol>
+        </div>
+        <div class="panel wide">
+          <h2>Recent questions</h2>
+          <table>
+            <thead><tr><th>When</th><th>User</th><th>Question</th><th>Latency</th><th>Feedback</th></tr></thead>
+            <tbody id="recent"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

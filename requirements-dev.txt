@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest>=8.0
+# only needed to regenerate sample_docs/
+matplotlib>=3.8
+reportlab>=4.2
